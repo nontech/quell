@@ -1,10 +1,16 @@
-<h1>Individual Goal Page</h1>
+<script lang="ts">
+    let { data } = $props();
+</script>
 
-<section>
-    Goals details of the card goes here
-</section>
+<div class="m-12">
+    <h1>Goals List Card</h1>
 
-<section>
-    Calendar view goes here
-</section>
+    <section>
+        {#each data.goals_list as {id, title}}
+            <li>
+                <a href={`/goal/${title}`}>{title}</a>
+            </li>
+        {/each}
+    </section>
+</div>
 

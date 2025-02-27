@@ -1,10 +1,12 @@
-<h1>Home Page</h1>
+<h1 class="text-3xl font-bold m-6">
+    Your Goals
+</h1>
 
 <section>
     <h2>Your Goals</h2>
-    <p>
-        List of goals cards goes here
-    </p>
+    <h3>
+        <a href="/goal">Get a 6-pack</a>
+    </h3>
 </section>
 
 <section>
