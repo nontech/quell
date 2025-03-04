@@ -1,5 +1,8 @@
 <script lang="ts">
-    let { goal } = $props();
+    let { 
+        goal,
+        showButton = true // Default to true to maintain backward compatibility
+    } = $props();
 </script>
 
 <div class="rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
@@ -17,4 +20,10 @@
     <div class="w-full bg-gray-200 rounded-full h-2.5">
         <div class="bg-blue-500 h-2.5 rounded-full" style="width: {goal.progress}%"></div>
     </div>
+
+    {#if showButton}
+        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+            <a href={`/goal/${goal.id}`}>View Goal</a>
+        </button>
+    {/if}
 </div>
