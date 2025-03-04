@@ -1,5 +1,5 @@
-<h1>404 Custom Default Fallback Error Page</h1>
+<h1>404 Custom Error Page</h1>
 
 <p>
-    Custom Error Message goes here
+    Failed to load your landing page at /
 </p>
