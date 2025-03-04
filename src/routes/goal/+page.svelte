@@ -8,7 +8,7 @@
     <section>
         {#each data.goals_list as {id, title}}
             <li>
-                <a href={`/goal/${title}`}>{title}</a>
+                <a href={`/goal/${title}`}>Click to view {title}</a>
             </li>
         {/each}
     </section>
